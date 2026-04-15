@@ -94,7 +94,7 @@ You may use AI assistants (ChatGPT, Copilot, Claude, etc.) freely — we use the
    - The bugs you found and how you'd prioritize them.
    - Your test suite: what you chose to automate and why.
    - Your fix: why you chose that bug, how you fixed it, and the passing test.
-4. Email us the link to your repo and the video.
+4. Email the link to your repo and the video to diego.gonzalez@teachinglabstudio.com and mariana.rego@teachinglabstudio.com.
 
 ## Evaluation Criteria
 
