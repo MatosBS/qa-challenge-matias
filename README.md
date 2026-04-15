@@ -18,6 +18,9 @@ We don't expect perfection. We expect you to think like someone who **owns quali
 # Install dependencies
 pnpm install
 
+# Install Playwright browser binaries (required before running tests)
+pnpm exec playwright install chromium
+
 # Run the development server
 pnpm dev
 
