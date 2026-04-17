@@ -245,9 +245,9 @@ Input field should be displayed next to the Menu button
 I would prioritize fixing the following two bugs:
 
 Bug 0010: Menu - Lesson Generator: same lessons are being generated when user inserts different topics (Critical)
+[ASSUMING IT IS AN ERROR, and not only that it's implemented this way on purpose for the challenge]<br>
 
-[ASSUMING IT IS AN ERROR, and not only that it's implemented this way on purpose for the challenge]
 This is a complete showstopper. The main (and only) purpose of this application is to generate lesson plans based on a specific topic. If the app always returns the exact same text regardless of what the user inputs, the product completely loses its value. This bug makes the fundamental feature of the system useless and is unacceptable for a production release.
 
-Bug 0009: Site - Lesson generator: user is able to submit another topic while a lesson is being generated (High)
+Bug 0009: Site - Lesson generator: user is able to submit another topic while a lesson is being generated (High)<br>
 In applications that rely on APIs—and especially those that stream AI responses—this is a massive risk. Allowing multiple, concurrent submissions can trigger several severe issues:
