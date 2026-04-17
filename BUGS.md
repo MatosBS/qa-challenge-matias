@@ -4,7 +4,7 @@ When user goes to Menu > Route or Menu > Try Turbopack, seems that a scroll bar 
 Something similar happens when user Goes to Menu > Route Info, a lot of white space is displayed that could also be avoided.
 
 ### Bugs
-##ALL BUGS WOULD CONTAIN A SCREENSHOT OR A VIDEO ATTACHED AS EVIDENCE OF THE ISSUE
+*[ALL BUGS WOULD CONTAIN A SCREENSHOT OR A VIDEO ATTACHED AS EVIDENCE OF THE ISSUE]*
 
 > 0001 Menu - Route info: user is able to modify the size of the panel Description
 
@@ -45,7 +45,7 @@ User should not be able to modify the position of the panel.
 *Description*
 When user goes to Menu > Preferences and updates the Theme, changes are applied only to the panel
 
-*Steps *
+*Steps*
 1. Go to Menu
 2. Go to Preferences
 3. In Theme, select a different option
@@ -61,7 +61,7 @@ Selected theme should be applied to the complete site.
 *Description*
 When user goes to Menu > Preferences and updates the Size, changes are applied only for the content of the panel but the size of the panel is not updated
 
-*Steps *
+*Steps*
 1. Go to Menu
 2. Go to Preferences
 3. In Size, select a different option
@@ -76,7 +76,7 @@ Content and size of the panel should be updated.
 *Description*
 When user is in Menu > Route / Try Turbopack / Route Info / Preferences, and clicks outside the panel, the menu is not completely closed.
 
-*Steps *
+*Steps*
 1. Go to Menu
 2. Go to, for example, Route 
 3. Click outside the panel
@@ -91,7 +91,7 @@ Menu should be completelly closed when user clicks outside.
 *Description*
 When user gest into the site, the text "Enter a topic below to generate your first lesson plan." is being displayed in two lines.
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 
 *Actual Result*
@@ -107,7 +107,7 @@ Text should be displayed in onle line
 *Description*
 When user focus on the input file and only inserts an empty space (" ") it is being possible to submit.
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 2. Focus on the input file
 3. Press the space bar to insert an empty space
@@ -123,7 +123,7 @@ Submit should not accept a whitespace-only  submit.
 *Description*
 When user inserts a topic and submits, he/she is not being able to scroll to the top while lessons is being generated.
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 2. Insert a topic
 3. Click the button or press Enter to Submit
@@ -140,7 +140,7 @@ User should be able to scroll while lesson is generated.
 *Description*
 When user inserts a topic and submits, it is being possible to submit another topic while  while lesson is being generated.
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 2. Insert a topic
 3. Click the button or press Enter to Submit
@@ -158,7 +158,7 @@ Input field and Submit button should be disabled until lessons is completelly di
 *Description*
 When user is trying to generate different lessons, same content is being generated even when the user inserts different topics
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 2. Insert a topic, for example "Maths"
 3. Wait until lesson is generated
@@ -177,7 +177,7 @@ Lessons should be generated correctly according to the inserted topic.
 *Description*
 When user is in Menu > Route / Try Turbopack / Route Info / Preferences, the bottom right corner of the panel is not correctly displayed. It seems that a tinny part is displayed.
 
-*Steps *
+*Steps*
 1. Go to Menu
 2. Go to, for example, Route 
 
@@ -192,7 +192,7 @@ Bottom right corner should be displayed correctly
 *Description*
 When user is submitting a topic and an error is generated, no clear message is being displayed.
 
-*Steps *
+*Steps*
 1. Go to Lesson Plan Generator
 2. Insert "ERROR" in the input
 3. Click on the Submit button or press the Enter key
@@ -208,7 +208,7 @@ User friendly error should be displayed.
 *Description*
 On mobile view (for example, iPhone 14 Pro Max), the Menu button is being displayed over the Input field
 
-*Steps *
+*Steps*
 1. Use the developer tools to emulate a device, for example: iPhone 14 Pro Max
 2. Go to Lesson Plan Generator
 
