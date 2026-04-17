@@ -23,8 +23,6 @@ User is able to modify the size of the panel.
 *Expected Result*
 User should not be able to modify the size of the panel
 
-![enter image description here](httpsasdsa)
-
 > 0002 Menu - Route info: user is able to modify the position of the panel Description
 
 *Description*
