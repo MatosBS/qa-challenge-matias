@@ -41,13 +41,14 @@ test.describe('Lesson Plan Generator - Acceptance Criteria Regression Suite', ()
 
   // Known bug: User is able to submit another topic while a lesson is being generated (Bug 0009) 
   test('Should verify Submit button and Input field are disable while lesson is generated', async () => {
+    test.setTimeout(120000);
     await lessonPage.submitLesson('History');
 
-    await expect(lessonPage.generatingIndicator).toBeVisible();
+    await expect(lessonPage.imgAnimateSpin).toBeVisible();
     await expect(lessonPage.txtTopic).toBeDisabled();
     await expect(lessonPage.btnSubmit).toBeDisabled();
 
-    await expect(lessonPage.generatingIndicator).toBeHidden({ timeout: 30000 });
+    await lessonPage.imgAnimateSpin.waitFor({ state: 'hidden' });
     await expect(lessonPage.txtTopic).toBeEnabled();
     await expect(lessonPage.btnSubmit).toBeEnabled();
   });

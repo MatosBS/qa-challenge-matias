@@ -13,10 +13,12 @@ export class LessonPlanGeneratorPage {
 
   readonly lblNoMessagesYet: Locator;
   readonly lblPlaceholder: Locator;
+  readonly imgAnimateSpin: Locator;
   readonly generatingIndicator: Locator;
   readonly userMessageBubbles: Locator;
   readonly assistantMessageBubbles: Locator;
   readonly messageListContainer: Locator;
+
 
   constructor(page: Page) {
     this.page = page;
@@ -31,6 +33,7 @@ export class LessonPlanGeneratorPage {
 
     this.txtTopic = page.getByPlaceholder(/Enter a lesson plan topic/i);
     this.btnSubmit = page.locator('button[type="submit"]');
+    this.imgAnimateSpin = page.locator('div.animate-spin');
     this.generatingIndicator = page.getByText(/Generating lesson plan/i);
     this.messageListContainer = page.locator('.overflow-y-auto');
 

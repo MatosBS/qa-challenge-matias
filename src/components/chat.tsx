@@ -19,6 +19,10 @@ export default function Chat() {
       setIsGenerating(false);
       setOptimisticMessages([]);
     },
+    onError: () => {
+      setIsGenerating(false);
+      setOptimisticMessages([]);
+    },
   });
 
   // Merge optimistic messages with SDK messages. Drop the optimistic copy once
@@ -85,12 +89,14 @@ export default function Chat() {
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
+              disabled={isGenerating}
               placeholder="Enter a lesson plan topic (e.g. 'photosynthesis for 5th grade')…"
-              className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
             />
             <button
               type="submit"
-              className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors flex-shrink-0"
+              disabled={isGenerating}
+              className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label="Send message"
             >
               {isGenerating ? (
